@@ -1,0 +1,4 @@
+*.py[cod]
+*.pid
+project/sqlite3.db
+project/public/
