@@ -1,0 +1,12 @@
+<!DOCTYPE html>{% load gears %}
+<html lang="en">
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <meta charset="utf-8">
+  {% css_asset_tag 'css/style.css' %}
+</head>
+<body>
+  {% block content %}{% endblock %}
+  {% js_asset_tag 'js/script.js' %}
+</body>
+</html>
