@@ -2,3 +2,4 @@
 *.pid
 project/sqlite3.db
 project/public/
+project/static/

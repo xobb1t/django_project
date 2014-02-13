@@ -120,6 +120,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
 
     'south',
+    'django_gears',
     'gunicorn',
 )
 
@@ -152,4 +153,23 @@ LOGGING = {
             'propagate': True,
         },
     }
+}
+
+GEARS_ROOT = path('static')
+
+GEARS_DIRS = (
+    path('assets'),
+)
+
+GEARS_COMPILERS = {
+    '.styl': 'gears_stylus.StylusCompiler',
+    '.less': 'gears_less.LESSCompiler',
+    '.coffee': 'gears_coffeescript.CoffeeScriptCompiler',
+    '.sass': 'gears_sass.SASSCompiler',
+    '.scss': 'gears_sass.SASSCompiler'
+}
+
+GEARS_COMPRESSORS = {
+    'application/javascript': 'gears_uglifyjs.UglifyJSCompressor',
+    'text/css': 'gears_clean_css.CleanCSSCompressor'
 }
