@@ -1,4 +1,4 @@
-from .common import *
+from .common import *  # NOQA
 
 DEBUG = TEMPLATE_DEBUG = False
 
@@ -9,7 +9,7 @@ DATABASES = {
     }
 }
 
-PUBLIC_ROOT = os.path.join(os.sep, 'var', 'www', 'site', 'public')
+PUBLIC_ROOT = os.path.join(os.sep, 'var', 'www', 'project', 'public')
 STATIC_ROOT = os.path.join(PUBLIC_ROOT, 'static')
 MEDIA_ROOT = os.path.join(PUBLIC_ROOT, 'media')
 
