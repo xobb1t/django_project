@@ -122,6 +122,7 @@ INSTALLED_APPS = (
     'south',
     'django_gears',
     'gunicorn',
+    'widget_tweaks',
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
