@@ -9,3 +9,4 @@ gears-sass==0.1.5
 gears-stylus==0.2.1
 gears-uglifyjs==0.1.1
 gunicorn==18.0
+django-widget-tweaks==1.3
