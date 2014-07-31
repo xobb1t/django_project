@@ -8,5 +8,4 @@ gears-less==0.3.3
 gears-sass==0.2.2
 gears-stylus==0.2.2
 gears-uglifyjs==0.1.1
-gunicorn==19.1.0
 django-widget-tweaks==1.3

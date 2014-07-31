@@ -16,3 +16,5 @@ MEDIA_ROOT = os.path.join(PUBLIC_ROOT, 'media')
 TEMPLATE_LOADERS = (
     ('django.template.loaders.cached.Loader', TEMPLATE_LOADERS),
 )
+
+INSTALLED_APPS += ('gunicorn', )
