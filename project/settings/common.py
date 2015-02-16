@@ -107,7 +107,7 @@ ROOT_URLCONF = 'project.urls'
 WSGI_APPLICATION = 'project.wsgi.application'
 
 TEMPLATE_DIRS = (
-    path('templates')
+    path('templates'),
 )
 
 INSTALLED_APPS = (
@@ -119,10 +119,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
 
-    'south',
-    'django_gears',
-    'gunicorn',
     'widget_tweaks',
+    'django_extensions',
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
@@ -156,21 +154,4 @@ LOGGING = {
     }
 }
 
-GEARS_ROOT = path('static')
-
-GEARS_DIRS = (
-    path('assets'),
-)
-
-GEARS_COMPILERS = {
-    '.styl': 'gears_stylus.StylusCompiler',
-    '.less': 'gears_less.LESSCompiler',
-    '.coffee': 'gears_coffeescript.CoffeeScriptCompiler',
-    '.sass': 'gears_sass.SASSCompiler',
-    '.scss': 'gears_sass.SASSCompiler'
-}
-
-GEARS_COMPRESSORS = {
-    'application/javascript': 'gears_uglifyjs.UglifyJSCompressor',
-    'text/css': 'gears_clean_css.CleanCSSCompressor'
-}
+TEST_RUNNER = 'django.test.runner.DiscoverRunner'

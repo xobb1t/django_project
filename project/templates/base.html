@@ -1,12 +1,12 @@
-<!DOCTYPE html>{% load gears %}
+<!DOCTYPE html>{% load staticfiles %}
 <html lang="en">
 <head>
-  <title>{% block title %}{% endblock %}</title>
+  <title>{% block html_title %}{% endblock %}</title>
   <meta charset="utf-8">
-  {% css_asset_tag 'css/style.css' %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
   {% block content %}{% endblock %}
-  {% js_asset_tag 'js/script.js' %}
+  <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 </body>
 </html>

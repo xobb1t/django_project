@@ -2,4 +2,6 @@
 *.pid
 project/sqlite3.db
 project/public/
-project/static/
+project/static/*
+!project/static/.gitkeep
+node_modules/

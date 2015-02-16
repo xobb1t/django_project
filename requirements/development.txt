@@ -1,5 +1,7 @@
 --requirement=common.txt
 
-django-debug-toolbar==1.2.1
-honcho==0.5.0
-ipython==2.1.0
+Werkzeug==0.10.1
+django-debug-toolbar==1.2.2
+django-extensions==1.5.0
+honcho==0.6.4
+ipython==2.4.1
